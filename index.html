@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Digital Enhanced Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('back.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Background fixed */
+            font-family: Arial, sans-serif;
+            padding-bottom: 100px;
+            min-height: 100vh;
+            position: relative;
+            color: #fff; 
+        }
+
+        /* Media Query for Medium devices (tablets) */
+        @media (max-width: 992px) {
+            body {
+                background-size: auto;
+            }
+        }
+
+        /* Media Query for Small devices (phones) */
+        @media (max-width: 768px) {
+            body {
+                background-size: cover;
+            }
+        }
+
+        header, footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        header {
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            margin-right: 1rem; /* Add margin for spacing */
+            margin-left: 1rem; /* Align to the left */
+        }
+
+        main {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .service-section, .extra-section, .contact-section {
+            margin-top: 50px;
+        }
+
+        .card-header, .contact-section {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 20px; 
+        }
+
+        .card-body{
+            color: #FF9800;
+        }
+
+        .card {
+            border-radius: 20px; 
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-section {
+            padding: 20px;
+            color: #fff; 
+            background-image: url('g.png');
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 15px;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .embed-responsive-16by9 {
+            padding-bottom: 56.25% !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">AT Digital</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" id="home">
+            <h1>Welcome to <span style="color: #007bff;">AT Digital</span></h1>
+            <p>This is the main content section of your colorful and interactive landing page.</p>
+            <button class="btn btn-primary">Learn More</button>
+        </section>
+
+        <section class="service-section container" id="services">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Service 1
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Service 2
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Service 3
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="extra-section container">
+            <h2>Why Choose Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+        </section>
+
+        <section class="contact-section container" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="email" placeholder="Your Email" required class="form-control">
+                <input type="text" placeholder="Your Name" required class="form-control">
+                <textarea placeholder="Your Message" required class="form-control"></textarea>
+                <button type="submit" class="btn btn-light">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <span>&copy; 2024 AT Digital. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
